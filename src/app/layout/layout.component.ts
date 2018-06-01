@@ -11,22 +11,22 @@ user:any;
     constructor(public router: Router,public userService:Userservice) { }
 
     ngOnInit() {
-    	    
+
         this.user = localStorage.getItem('name')
-        
+
         if (this.router.url === '/') {
            // console.log("in");
             this.userService.getAuser(this.user).then(userDoc=>{
              var groupname = userDoc['memberof'][0] ;
              if(groupname){
 
-               this.router.navigate(['/dashboard'],{queryParams:{memberof:groupname}});
-             } 
+               this.router.navigate(['/feeds'],{queryParams:{memberof:groupname}});
+             }
              else{
-               this.router.navigate(['/dashboard']);
+               this.router.navigate(['/feeds']);
              }
             });
-            //this.router.navigate(['/dashboard']);
+            //this.router.navigate(['/feeds']);
         }
         if(this.router.url === '/mm'){
             console.log("publishing url")

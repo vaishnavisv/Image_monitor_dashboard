@@ -31,8 +31,7 @@
     @include transition($modal-transition);
     transform: translate(0, -25%);
   }
-  &.show .modal-dialog { transform: translate(0, 0); max-width: 65%;
-    float: right; max-height: 10px;}
+  &.show .modal-dialog { transform: translate(0, 0); max-width: 50%}
 }
 .modal-open .modal {
   overflow-x: hidden;

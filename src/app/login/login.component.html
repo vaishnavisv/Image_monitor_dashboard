@@ -3,17 +3,17 @@
         <div class="col-md-4 push-md-4">
 
 
-            <img src="assets/images/radio.png" class="user-avatar img-log" />
-            <h1>Media Monitor</h1>
+            <!--<img src="assets/images/radio.png" class="user-avatar img-log" />-->
+            <h1>Image Monitor</h1>
             <ngb-alert *ngIf="alertsuccess" (close)="closeAlert()">Success</ngb-alert>
             <ngb-alert *ngIf="alertauth" (close)="closeAlert()">{{errormessage}}</ngb-alert>
             <ngb-alert *ngIf="alertmissing" (close)="closeAlert()">{{errormessage}}</ngb-alert>
             <form role="form" [formGroup]="loginForm" (ngSubmit)="onLoggedin()">
-        
+
                 <div class="form-content">
                     <div class="form-group">
                         <input #user type="text" ng-model="name" class="form-control input-underline input-lg" placeholder="Username" formControlName="username" id="username" name="username">
-                        <span *ngIf="!loginForm.get('username').valid && loginForm.get('username').touched" 
+                        <span *ngIf="!loginForm.get('username').valid && loginForm.get('username').touched"
                                   class="help-block"> Please enter user name</span>
                     </div>
 
@@ -25,12 +25,12 @@
 
                 <button class="btn rounded-btn"> Log in </button>
 
-              
-                
+
+
                 &nbsp;
                 <a class="btn rounded-btn" [routerLink]="['/signup']">Register</a>
                 &nbsp;
-        
+
 
                  <a [routerLink]="['/forgetpassword']" class="btn btn-link forgetpassword">Forgot Password?</a>
 

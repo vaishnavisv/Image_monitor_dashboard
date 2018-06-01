@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve -H 0.0.0.0",
+    "start": "ng serve --port 8002",
     "build": "ng build --prod",
     "gitbuild": "ng build --prod --base /start-angular/SB-Admin-BS4-Angular-4/master/dist/",
     "test": "ng test",

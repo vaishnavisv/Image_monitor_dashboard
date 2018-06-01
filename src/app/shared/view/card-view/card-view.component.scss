@@ -6,17 +6,20 @@
 }
 
 .nav-display{
-    background-color: #fff; 
+    background-color: #fff;
 }
 
 .card-view {
+	margin-left: 50px;
+	margin-bottom: 36px;
 	background-color: #fff;
 }
 
 .card-view img {
-	width: 100%;
+	/*width: 100%;
+	height: 350px;*/
 	border-radius:0.25rem;
-	
+
 }
 .card-view .hide-image{
 	width:0%;
@@ -57,7 +60,7 @@
 }
 
 .card-magazine{
-	max-width: 888px;
+		max-width: 85%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 24px;
@@ -86,7 +89,7 @@
 /*hover for feeds elements*/
 
 .visual:hover, .visual:hover .card-hover-control {
-	background-color: #f6f6f6;
+	//background-color: #f6f6f6;
 	opacity:1 !important;
 }
 /*.card-hover-control {
@@ -96,15 +99,18 @@
 .ago{
 	font-size: 11px;
 	position: absolute;
-	margin-top: 4px;	
+	margin-top: 4px;
 	transition: opacity .35s ease;
 }
 .ago a{
-	color: #a3a3a2; 
+	color: #a3a3a2;
 	font-size: 15px;
-  	text-align: center; 
+  	text-align: center;
   	border: transparent;
   	z-index: 1;
+}
+.dialog-buttons{
+	    float: right;
 }
 
 /*===============================================================================================
@@ -115,38 +121,38 @@ To change breakpoint for nav collapse
 
 
 @media (max-width: 480px) {
- 
+
 }
 
 @media (max-width: 767px) {
-  
+
 }
 
 @media (max-width: 995px) {
-  
+
 }
 
 
 /*========================================================
-  
+
 Bootstrap 3 Media Queries
 
 /*==========  Mobile First Method  ==========*/
 
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
  .card-hover-control {
 	opacity: 0;
 	margin-left: 185px;
-}  
+}
 }
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
  .card-hover-control {
 	opacity: 0;
 	margin-left: 285px;
-}  
+}
 }
 
 /* Small Devices, Tablets */
@@ -154,14 +160,14 @@ Bootstrap 3 Media Queries
 .card-hover-control {
 	opacity: 0;
 	margin-left: 55px;
-} 
+}
 }
 
 @media only screen and (min-width : 768px) {
  .card-hover-control {
 	opacity: 0;
 	margin-left: 120px;
-}  
+}
 }
 
 /* Medium Devices, Desktops */
@@ -169,13 +175,14 @@ Bootstrap 3 Media Queries
  .card-hover-control {
 	opacity: 0;
 	margin-left: 120px;
-}  
+}
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 .card-hover-control {
 	opacity: 0;
-	margin-left: 166px;
-} 
+	margin-left: 210px;
+  margin-bottom: 25px;
+}
 }

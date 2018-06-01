@@ -2,7 +2,10 @@
 $modaltoolbar:#a3a3a2;
 $buttonbackground:#fffl;
 /*Styles for tool bar*/
-
+.fullImage{
+  max-width: 100%;
+  max-height: 100%;
+}
 
 @media  (max-width: 480px) {
     .modal-image{
@@ -17,7 +20,7 @@ $buttonbackground:#fffl;
 }
 
 
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
   .alert-dialogbox h1{
     font-size: 22px;
@@ -43,9 +46,9 @@ $buttonbackground:#fffl;
     margin-left: 30px;
 }
 .modal-tool-bar a{
-        color: $modaltoolbar; 
+        color: $modaltoolbar;
         font-size: 15px;
-        text-align: center; 
+        text-align: center;
         border: transparent;
         z-index: 1;
         margin-left: 7px;
@@ -95,13 +98,13 @@ $buttonbackground:#fffl;
     max-width: 222px;
     width: 578px;
     margin-top: 3rem;
-    margin-bottom: 3rem; 
-    display: block; 
-    border-radius: 3px; 
-    border: 1px solid rgb(239, 239, 239); 
+    margin-bottom: 3rem;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid rgb(239, 239, 239);
     max-height: 397px;
     height: 310px;
-    
+
 }
 /*Styles for Feed Heading*/
 .feed-heading{
@@ -120,7 +123,12 @@ $buttonbackground:#fffl;
     color:#333333;
     cursor:pointer;
 }
-
+.align-alert{
+  margin-top: 11px;
+}
+.price-margin{
+  margin-top: 10px;
+}
 
 /*Styles for Feed Heading*/
 .metadata-modal{
@@ -132,7 +140,7 @@ $buttonbackground:#fffl;
     margin-bottom: 11px;
 }
 .card-blocks h4{
-   font-size: 18px; 
+   font-size: 18px;
    margin-right: 4rem;
 }
 /*Styles for share with teams*/
@@ -144,7 +152,7 @@ $buttonbackground:#fffl;
     margin-top: 0;
     margin-right: -40.5rem;*/
     color:#333333;
-    cursor:pointer;   
+    cursor:pointer;
 }
 .heading-sub{
     /*margin-top: 2.5rem;*/
@@ -195,7 +203,7 @@ $buttonbackground:#fffl;
 
 }
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
   .alert-dialogbox h1{
     font-size: 28px;
@@ -221,9 +229,9 @@ $buttonbackground:#fffl;
     margin-left: 30px;
 }
 .modal-tool-bar a{
-        color: $modaltoolbar; 
+        color: $modaltoolbar;
         font-size: 15px;
-        text-align: center; 
+        text-align: center;
         border: transparent;
         z-index: 1;
         margin-left: 7px;
@@ -269,14 +277,14 @@ $buttonbackground:#fffl;
     max-width: 300px;
     width: 578px;
     margin-top: 3rem;
-    margin-bottom: 3rem; 
+    margin-bottom: 3rem;
     margin-left: 14px;
-    display: block; 
-    border-radius: 3px; 
-    border: 1px solid rgb(239, 239, 239); 
+    display: block;
+    border-radius: 3px;
+    border: 1px solid rgb(239, 239, 239);
     max-height: 397px;
     height: 310px;
-    
+
 }
 /*Styles for Feed Heading*/
 .feed-heading{
@@ -307,7 +315,7 @@ $buttonbackground:#fffl;
     margin-bottom: 11px;
 }
 .card-blocks h4{
-   font-size: 1.5rem; 
+   font-size: 1.5rem;
    margin-right: 0rem;
    margin-left: 12px;
 }
@@ -321,7 +329,7 @@ $buttonbackground:#fffl;
     margin-top: 0;
     margin-right: -40.5rem;*/
     color:#333333;
-    cursor:pointer;   
+    cursor:pointer;
 }
 .heading-sub{
     /*margin-top: 2.5rem;*/
@@ -373,7 +381,7 @@ $buttonbackground:#fffl;
 }
 
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (min-width : 576px) {
   .alert-dialogbox h1{
     font-size: 28px;
@@ -399,9 +407,9 @@ $buttonbackground:#fffl;
     margin-left: 30px;
 }
 .modal-tool-bar a{
-        color: $modaltoolbar; 
+        color: $modaltoolbar;
         font-size: 15px;
-        text-align: center; 
+        text-align: center;
         border: transparent;
         z-index: 1;
         margin-left: 7px;
@@ -447,14 +455,14 @@ $buttonbackground:#fffl;
     max-width: 300px;
     width: 578px;
     margin-top: 3rem;
-    margin-bottom: 3rem; 
+    margin-bottom: 3rem;
     margin-left: 14px;
-    display: block; 
-    border-radius: 3px; 
-    border: 1px solid rgb(239, 239, 239); 
+    display: block;
+    border-radius: 3px;
+    border: 1px solid rgb(239, 239, 239);
     max-height: 397px;
     height: 310px;
-    
+
 }
 /*Styles for Feed Heading*/
 .feed-heading{
@@ -485,7 +493,7 @@ $buttonbackground:#fffl;
     margin-bottom: 11px;
 }
 .card-blocks h4{
-   font-size: 1.5rem; 
+   font-size: 1.5rem;
    margin-right: 0rem;
    margin-left: 12px;
 }
@@ -499,7 +507,7 @@ $buttonbackground:#fffl;
     margin-top: 0;
     margin-right: -40.5rem;*/
     color:#333333;
-    cursor:pointer;   
+    cursor:pointer;
 }
 .heading-sub{
     /*margin-top: 2.5rem;*/
@@ -576,9 +584,9 @@ $buttonbackground:#fffl;
     margin-left: 30px;
 }
 .modal-tool-bar a{
-        color: $modaltoolbar; 
+        color: $modaltoolbar;
         font-size: 15px;
-        text-align: center; 
+        text-align: center;
         border: transparent;
         z-index: 1;
         margin-left: 7px;
@@ -625,13 +633,13 @@ $buttonbackground:#fffl;
     width: 578px;
     margin-top: 3rem;
     margin-left: 0px;
-    margin-bottom: 3rem; 
-    display: block; 
-    border-radius: 3px; 
-    border: 1px solid rgb(239, 239, 239); 
+    margin-bottom: 3rem;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid rgb(239, 239, 239);
     max-height: 397px;
     height: 310px;
-    
+
 }
 /*Styles for Feed Heading*/
 .feed-heading{
@@ -662,7 +670,7 @@ $buttonbackground:#fffl;
     margin-bottom: 11px;
 }
 .card-blocks h4{
-   font-size: 1.5rem; 
+   font-size: 1.5rem;
    margin-right: 0rem;
    margin-left: 0px;
 }
@@ -676,7 +684,7 @@ $buttonbackground:#fffl;
     margin-top: 0;
     margin-right: -40.5rem;*/
     color:#333333;
-    cursor:pointer;   
+    cursor:pointer;
 }
 .heading-sub{
     /*margin-top: 2.5rem;*/
@@ -753,9 +761,9 @@ $buttonbackground:#fffl;
     margin-left: 30px;
 }
 .modal-tool-bar a{
-        color: $modaltoolbar; 
+        color: $modaltoolbar;
         font-size: 15px;
-        text-align: center; 
+        text-align: center;
         border: transparent;
         z-index: 1;
         margin-left: 7px;
@@ -802,13 +810,13 @@ $buttonbackground:#fffl;
     width: 578px;
     margin-top: 3rem;
     margin-left: 0px;
-    margin-bottom: 3rem; 
-    display: block; 
-    border-radius: 3px; 
-    border: 1px solid rgb(239, 239, 239); 
+    margin-bottom: 3rem;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid rgb(239, 239, 239);
     max-height: 397px;
     height: 310px;
-    
+
 }
 /*Styles for Feed Heading*/
 .feed-heading{
@@ -839,7 +847,7 @@ $buttonbackground:#fffl;
     margin-bottom: 11px;
 }
 .card-blocks h4{
-   font-size: 1.5rem; 
+   font-size: 1.5rem;
    margin-right: 0rem;
    margin-left: 0px;
 }
@@ -853,7 +861,7 @@ $buttonbackground:#fffl;
     margin-top: 0;
     margin-right: -40.5rem;*/
     color:#333333;
-    cursor:pointer;   
+    cursor:pointer;
 }
 .heading-sub{
     /*margin-top: 2.5rem;*/
@@ -930,9 +938,9 @@ $buttonbackground:#fffl;
     margin-left: 30px;
 }
 .modal-tool-bar a{
-        color: $modaltoolbar; 
+        color: $modaltoolbar;
         font-size: 15px;
-        text-align: center; 
+        text-align: center;
         border: transparent;
         z-index: 1;
         margin-left: 7px;
@@ -979,13 +987,13 @@ $buttonbackground:#fffl;
     width: 578px;
     margin-top: 3rem;
     margin-left: 0px;
-    margin-bottom: 3rem; 
-    display: block; 
-    border-radius: 3px; 
-    border: 1px solid rgb(239, 239, 239); 
+    margin-bottom: 3rem;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid rgb(239, 239, 239);
     max-height: 397px;
     height: 310px;
-    
+
 }
 /*Styles for Feed Heading*/
 .feed-heading{
@@ -1016,7 +1024,7 @@ $buttonbackground:#fffl;
     margin-bottom: 11px;
 }
 .card-blocks h4{
-   font-size: 1.5rem; 
+   font-size: 1.5rem;
    margin-right: 0rem;
    margin-left: 0px;
 }
@@ -1030,7 +1038,7 @@ $buttonbackground:#fffl;
     margin-top: 0;
     margin-right: -40.5rem;*/
     color:#333333;
-    cursor:pointer;   
+    cursor:pointer;
 }
 .heading-sub{
     /*margin-top: 2.5rem;*/
@@ -1079,4 +1087,68 @@ $buttonbackground:#fffl;
     color: #fff;
 }
 
+}
+.form-item{
+
+	display: grid;
+	//
+}
+.price-inr{
+  width: 150%;
+}
+.price-usd{
+  width: 160%;
+margin-left: 55px;
+}
+
+.form-item input{
+	font-size: 1.2rem;
+	padding: 0.5rem 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    line-height: initial;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+/*User Management Dropdown*/
+.type-group{
+	margin-left: 3rem;
+}
+.form-item button{
+	margin-left: 2px;
+	font-size: 15px;
+	background-color: #249540;
+    color: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+.mang-mail{
+	margin-top: 1rem;
+}
+.form-type{
+
+	font-size: 0.875rem;
+	height: 28px;
+	background-color: rgba(0, 0, 0, 0.63);
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 0.2rem;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+.add-user{
+      margin-top: 10px;
+}
+.add-user button{
+	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+.add-user span{
+	padding: 5px;
+	display: block;
+}
+.user-mang{
+	margin-top: 5rem;
+	margin-left: 0rem;
+	margin-right: 5rem;
+	border: 0px;
 }

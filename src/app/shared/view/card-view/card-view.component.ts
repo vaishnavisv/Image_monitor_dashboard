@@ -9,6 +9,8 @@ import { HtmlParser } from '../../Utilities/html-parser';
   animations: [routerTransition()]
 })
 export class CardViewComponent implements OnInit {
+  showDialog:boolean=false;
+  fullImageUrl:any;
 p:any; //variable to store the current page nuber
 @Input('feeds') feeds:any=[];
 @Input('publishedfeeds') publishedfeeds:any=[];
@@ -17,9 +19,11 @@ p:any; //variable to store the current page nuber
   constructor(public html : HtmlParser) { }
 
   ngOnInit() {
-  	//console.log("iye",this.item);
+  	console.log("iye",this.feeds);
   }
   onpage(){
     window.scroll(0,0);
   }
+
+
 }

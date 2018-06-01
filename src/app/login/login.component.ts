@@ -15,7 +15,7 @@ import { Cookie } from 'ng2-cookies/ng2-cookies';
     animations: [routerTransition()],
     providers: [NgbAlertConfig]
 })
- 
+
 export class LoginComponent implements OnInit {
 @ViewChild('user') user: ElementRef;
 @ViewChild('password') pwd: ElementRef;
@@ -28,10 +28,10 @@ export class LoginComponent implements OnInit {
     errormessage:any;
     showDialog:boolean;
     groups:any=[];
-    
+
 
     constructor(public router: Router,public route:ActivatedRoute,public formBuilder:FormBuilder,private userService:Userservice,public ngAlert:NgbAlertConfig,public variab:Global,public groupService:GroupService) {
-              
+
 
             }
 
@@ -76,7 +76,7 @@ export class LoginComponent implements OnInit {
 
     }
 
-  
+
     onLoggedin() {
         //console.log(this.username)
         let credentials = {
@@ -84,8 +84,8 @@ export class LoginComponent implements OnInit {
             'password':this.loginForm.controls['password'].value
         };
         //console.log("log",credentials);
-        
-        
+
+
 
         this.userService.login(credentials).then(response=>{
             console.log(response);
@@ -104,27 +104,27 @@ export class LoginComponent implements OnInit {
                   if(groupname){
                    if(groupname.length == 0){
                      //console.log("router1",this.router.url);
-                     this.router.navigate(['/dashboard'])
-                    // 
-                     //this.router.navigate(['/dashboard'],{queryParams:{memberof:groupname}});
-                   }   
+                     this.router.navigate(['/feeds'])
+                    //
+                     //this.router.navigate(['/feeds'],{queryParams:{memberof:groupname}});
+                   }
                    else if(groupname.length == 1){
                      //console.log("router2",this.router.url);
                      var gname = userDoc['memberof'][0];
-                     this.router.navigate(['/dashboard'],{queryParams:{memberof:gname}});
+                     this.router.navigate(['/feeds'],{queryParams:{memberof:gname}});
                      localStorage.setItem('group',gname);
-                    // this.router.navigate(['/dashboard']);
+                    // this.router.navigate(['/feeds']);
                    }
                    else if(groupname.length>1){
                      //console.log(localStorage.getItem('group'))
                      if(localStorage.getItem('group')){
-                       this.router.navigate(['/dashboard'],{queryParams:{memberof:localStorage.getItem('group')}});
+                       this.router.navigate(['/feeds'],{queryParams:{memberof:localStorage.getItem('group')}});
                      }
                      else{
                        this.groups=userDoc['memberof'];
                        this.showDialog=true;
                      }
-                     
+
                      //console.log(this.showDialog);
                    }
                   }
@@ -143,22 +143,22 @@ export class LoginComponent implements OnInit {
                           var groups:any=[];
                           groups=res;
                           groups.map(group=>{
-                              
+
                               if(group.key === 'default'){
-                                   
+
                                  group.value.members.push(doc);
                                  this.groupService.update(group.value).then(res=>{
                                      //console.log(res);
                                      console.log("router4",this.router.url);
                                      if(res['ok']== true){
                                        localStorage.setItem('group','default');
-                                         this.router.navigate(['/dashboard'],{queryParams:{memberof:'default'}});
+                                         this.router.navigate(['/feeds'],{queryParams:{memberof:'default'}});
                                      }
                                  });
                               }
                           })
                       })
-                      
+
                   }
                });
                //
@@ -179,7 +179,7 @@ export class LoginComponent implements OnInit {
             }
         })
 
-        
+
     }
     public closeAlert() {
         this.alertsuccess=false;
@@ -189,7 +189,7 @@ export class LoginComponent implements OnInit {
     //Dialog component to choose group to navigate to that group
     onChoosegroup(groupname){
       localStorage.setItem('group',groupname);
-     this.router.navigate(['/dashboard'],{queryParams:{memberof:groupname}});
+     this.router.navigate(['/feeds'],{queryParams:{memberof:groupname}});
     }
 
 }
